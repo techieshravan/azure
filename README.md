@@ -1,2 +1,1 @@
-# Azure-Demos
-Azure Examples
+# Azure Examples
