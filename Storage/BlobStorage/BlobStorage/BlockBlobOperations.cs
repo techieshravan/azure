@@ -12,7 +12,7 @@ namespace BlobStorage
     {
         const string image = "Profile.png";
 
-        public async Task UploadImageFileToBlob()
+        public async Task UploadImageFileToBlobAsync()
         {
             CloudBlobContainer container = GetCloudBlobContainer();
 
@@ -74,7 +74,7 @@ namespace BlobStorage
             }
         }
 
-        public async Task DownloadBlob()
+        public async Task DownloadBlobAsync()
         {
             CloudBlobContainer container = GetCloudBlobContainer();
             
@@ -85,7 +85,7 @@ namespace BlobStorage
             await blockBlob.DownloadToFileAsync(string.Format("./CopyOf{0}", image), FileMode.Create);
         }
 
-        public async Task ListBlobsSegmentedInFlatListing()
+        public async Task ListBlobsSegmentedInFlatListingAsync()
         {
             var cloudBlobContainer = GetCloudBlobContainer();
 
@@ -117,7 +117,7 @@ namespace BlobStorage
             while (continuationToken != null);
         }
 
-        public async Task DeleteBlob()
+        public async Task DeleteBlobAsync()
         {
             CloudBlobContainer container = GetCloudBlobContainer();
 

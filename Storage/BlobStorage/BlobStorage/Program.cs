@@ -9,15 +9,15 @@ namespace BlobStorage
             Console.WriteLine("Azure  Blob Storage\n ");
 
             var blockBlobOperations = new BlockBlobOperations();
-            blockBlobOperations.UploadImageFileToBlob().Wait();
+            blockBlobOperations.UploadImageFileToBlobAsync().Wait();
             blockBlobOperations.ListBlobs();
-            blockBlobOperations.DownloadBlob().Wait();
+            blockBlobOperations.DownloadBlobAsync().Wait();
 
             var appendBlobOperations = new AppendBlobOperations();
             appendBlobOperations.UploadToAppendBlob();
 
             var pageBlobOperations = new PageBlobOperations();
-            pageBlobOperations.BasicStoragePageBlobOperations().Wait();
+            pageBlobOperations.BasicPageBlobOperationsAsync().Wait();
 
             Console.ReadLine();
         }

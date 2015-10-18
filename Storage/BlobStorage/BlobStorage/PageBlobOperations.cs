@@ -9,7 +9,7 @@ namespace BlobStorage
 {
     class PageBlobOperations
     {
-        public async Task BasicStoragePageBlobOperations()
+        public async Task BasicPageBlobOperationsAsync()
         {
             const string PageBlobName = "samplepageblob";
 
