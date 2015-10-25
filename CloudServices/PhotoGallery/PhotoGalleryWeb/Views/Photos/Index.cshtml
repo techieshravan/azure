@@ -1,0 +1,26 @@
+﻿@model IEnumerable<PhotoGallery.DB.Photo>
+
+@{
+    ViewBag.Title = "Photo Gallery";
+}
+
+<h2>Photo Gallery</h2>
+
+@foreach (var item in Model)
+{
+
+    <div class="image">
+        <a target="_blank" href="@Url.Action("Details", "Photos", new { id=item.PhotoId })">
+            <img src="@Html.Raw(item.ThumbnailURL)" alt="" width="110" height="90">
+        </a>
+        <div class="desc">@Html.DisplayFor(modelItem => item.Title)</div>
+        <div>
+            @Html.ActionLink("Edit", "Edit", new { id = item.PhotoId }) | @Html.ActionLink("Delete", "Delete", new { id = item.PhotoId })
+        </div>
+    </div>
+}
+<div style="clear:both"></div>
+<br /><br />
+<p>
+    @Html.ActionLink("Upload New Image", "Create")
+</p>
