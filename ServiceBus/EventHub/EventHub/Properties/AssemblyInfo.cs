@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("QueueSender")]
+[assembly: AssemblyTitle("EventHub")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("QueueSender")]
+[assembly: AssemblyProduct("EventHub")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("15d9bb23-d8b4-41cc-a048-5f4bbe8f312c")]
+[assembly: Guid("ca28ecdd-1018-40f7-a28a-6f1831d26b3a")]
 
 // Version information for an assembly consists of the following four values:
 //
