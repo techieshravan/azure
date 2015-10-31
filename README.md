@@ -1,3 +1,3 @@
 # Azure Examples
 
-[Azure Videos](http://1drv.ms/1kiIKUJ)
+[Azure Architecture Blueprints Videos](http://1drv.ms/1kiIKUJ)
