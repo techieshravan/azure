@@ -1,0 +1,54 @@
+@*
+*@
+
+@model MyFixIt.Persistence.FixItTask
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset class="form-horizontal">
+        <legend>Update FixIt Task</legend>
+
+        @Html.HiddenFor(model => model.FixItTaskId)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Title, new { @class = "control-label col-md-2" })
+			<div class="controls">
+				@Html.EditorFor(model => model.Title)
+				@Html.ValidationMessageFor(model => model.Title, null, new { @class = "help-inline" })
+			</div>
+		</div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Notes, new { @class = "control-label col-md-2" })
+			<div class="controls">
+				@Html.TextAreaFor(model => model.Notes)
+				@Html.ValidationMessageFor(model => model.Notes, null, new { @class = "help-inline" })
+			</div>
+		</div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" for="IsDone">Fixed</label>
+			<div class="controls">
+				@Html.EditorFor(model => model.IsDone)
+				@Html.ValidationMessageFor(model => model.IsDone, null, new { @class = "help-inline" })
+			</div>
+		</div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </fieldset>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

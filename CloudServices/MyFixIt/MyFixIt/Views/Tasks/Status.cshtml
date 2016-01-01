@@ -1,0 +1,44 @@
+@*
+*@
+
+@model IEnumerable<MyFixIt.Persistence.FixItTask>
+
+@{
+    ViewBag.Title = "Below is the status on FixIts you've opened";
+}
+
+<h2>FixIts You've Opened</h2>
+
+<p>
+    Below is the status of the FixIts you've already opened:
+</p>
+<table class="table table-striped">
+    <tr>
+        <th>Thing to Fix</th>
+        <th>Assigned To</th>
+        <th>Status</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Owner)
+        </td>
+        <td>
+            @if (item.IsDone) {
+                <span>Fixed</span>
+            }
+            else {
+                <span>Open</span>   
+            }
+        </td>
+    </tr>
+}
+
+</table>
+
+<a href="/Tasks/Create">Create a New FixIt</a>
