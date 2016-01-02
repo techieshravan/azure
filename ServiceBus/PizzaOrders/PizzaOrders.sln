@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaOrderCreator", "PizzaOrderCreator\PizzaOrderCreator.csproj", "{277B7C21-2A4E-4D3E-9334-2F638322F108}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaOrderReceiver", "PizzaOrderReceiver\PizzaOrderReceiver.csproj", "{EDAADCF0-3279-41F6-83AF-807117505393}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaOrders.MessageContracts", "PizzaOrders.MessageContracts\PizzaOrders.MessageContracts.csproj", "{21B638E4-EA53-4E77-93C1-43E479B6422D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{277B7C21-2A4E-4D3E-9334-2F638322F108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{277B7C21-2A4E-4D3E-9334-2F638322F108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{277B7C21-2A4E-4D3E-9334-2F638322F108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{277B7C21-2A4E-4D3E-9334-2F638322F108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDAADCF0-3279-41F6-83AF-807117505393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDAADCF0-3279-41F6-83AF-807117505393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDAADCF0-3279-41F6-83AF-807117505393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDAADCF0-3279-41F6-83AF-807117505393}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21B638E4-EA53-4E77-93C1-43E479B6422D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21B638E4-EA53-4E77-93C1-43E479B6422D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21B638E4-EA53-4E77-93C1-43E479B6422D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21B638E4-EA53-4E77-93C1-43E479B6422D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
